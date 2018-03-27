@@ -1,0 +1,158 @@
+/*BODY*/
+body {
+  background: #fff;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.board {
+  padding-bottom: 50px;
+}
+
+/*BOARD*/
+.board h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+/*BUTTON CREATE-COLUMN*/
+.create-col {
+  text-align: center;
+}
+
+.create-column {
+  min-width: 200px;
+  min-height: 50px;
+  font-size: 20px; 
+  margin-top: 10px; 
+  text-align: center;
+}
+
+/*COLUMN_CONTAINER*/
+.column-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*COLUMN*/
+.column {
+  padding: 40px;
+  min-width: 300px;
+  border-radius: 4px;
+  min-height: 300px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(222, 222, 222);;
+  position: relative;
+  text-align: center;
+  background-color: #FFF1DE; 
+}
+
+.column h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*CARD*/
+
+.card-list {
+    min-height: 50px;
+    text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  max-width: 280px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  margin-left: -40px;
+  padding: 10px; 
+  cursor: pointer;
+  border: 1px solid rgb(222, 222, 222);
+  background-color: #F5F6F8;
+  word-wrap: break-word;
+}
+
+li p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 5px;
+  display: inline;
+  padding-left: 5px;
+}
+
+.delete_card {
+  position: relative;
+  bottom: 2px;
+  margin-right: -10px;
+  text-decoration: none;
+}
+
+.btn-delete{
+  background: inherit;
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+
+.delete_column {
+  position: relative;
+  top: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.column a {
+  text-decoration: none;
+}
+
+.column:nth-child(3n) {
+  background-color: #E9F7F8;     
+}
+
+.column:nth-child(3n+1) {
+    background-color: #F5FDF1;;
+}
+
+.column-add-card {
+  margin-top: 70px;
+}
+
+
+/*MEDIA QUERIES*/
+/* For mobile phones: */
+@media(max-width: 767px) {
+  .column-container, .column {
+    margin: 0  auto;
+    margin-top: 20px;
+  }
+}
+
+/*FOR TABLETS*/
+@media (min-width:768px) and (max-width: 1199px) {
+  .column-container, .column {
+    margin: 0  auto;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
